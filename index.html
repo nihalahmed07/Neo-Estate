@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO Real Estate - Luxury Properties & Investment Opportunities</title>
+    <meta name="description"
+        content="Discover premium real estate properties, luxury homes, and investment opportunities. Your trusted partner in finding the perfect property.">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="loading">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <h1 class="logo-text">NEO ESTATE</h1>
+                <div class="logo-underline"></div>
+            </div>
+            <div class="preloader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="preloader-text">Loading Your Dream Home...</p>
+        </div>
+    </div>
+
+    <!-- Header (Outside wrapper for proper z-index) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1
+                        style="color: #ffffff !important; opacity: 1 !important; visibility: visible !important; text-shadow: 0 3px 15px rgba(0, 0, 0, 0.8) !important; background: rgba(0, 0, 0, 0.3) !important; padding: 0.5rem 1rem !important; border-radius: 8px !important; border: 2px solid rgba(255, 255, 255, 0.2) !important;">
+                        NEO</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li class="has-dropdown">
+                            <a href="#properties">Properties</a>
+                            <div class="dropdown">
+                                <div class="dropdown-col">
+                                    <h4>Residential</h4>
+                                    <ul>
+                                        <li><a href="#">Luxury Homes</a></li>
+                                        <li><a href="#">Apartments</a></li>
+                                        <li><a href="#">Villas</a></li>
+                                        <li><a href="#">Penthouses</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4>Commercial</h4>
+                                    <ul>
+                                        <li><a href="#">Office Spaces</a></li>
+                                        <li><a href="#">Retail Properties</a></li>
+                                        <li><a href="#">Industrial</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4>Investment</h4>
+                                    <ul>
+                                        <li><a href="#">New Developments</a></li>
+                                        <li><a href="#">Off-Plan</a></li>
+                                        <li><a href="#">ROI Properties</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Featured Listings</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Join Our Team</a></li>
+                        <li><a href="#contact" class="btn-contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <div class="page-wrapper">
+
+        <!-- Decorative SVG Background -->
+        <div class="decorative-svg-container">
+            <svg class="decorative-svg" width="420" height="420" viewBox="0 0 420 420"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- background -->
+                <rect width="100%" height="100%" fill="#fafafa" opacity="0.1" />
+
+                <!-- top corner (darker yellow) triangle -->
+                <polygon class="svg-triangle-1" points="0,0 160,0 160,160" fill="#fdda7a" />
+
+                <!-- large pale yellow triangle sharing the same inner corner -->
+                <polygon class="svg-triangle-2" points="160,160 420,160 260,420" fill="#fbe3a4" />
+
+                <!-- Additional accent triangle -->
+                <polygon class="svg-triangle-3" points="0,160 0,420 160,420" fill="#e87722" opacity="0.2" />
+            </svg>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-carousel">
+            <div class="hero-slide active">
+                <!-- Video Background -->
+                <div class="hero-video-container">
+                    <video class="hero-video" autoplay muted loop playsinline>
+                        <source
+                            src="From KlickPin CF Housing society animation [Video] _ Modern bungalow house design Architecture design Architecture.mp4"
+                            type="video/mp4">
+                        <!-- Fallback for browsers that don't support video -->
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="hero-video-overlay"></div>
+                </div>
+
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="category-text">LUXURY REAL ESTATE</span>
+                        <div class="category-line"></div>
+                    </div>
+                    <h2 class="hero-title">Premium Properties for<br>Exceptional Living</h2>
+                    <div class="hero-cta">
+                        <a href="#properties" class="cta-link">
+                            <span>EXPLORE PROPERTIES</span>
+                            <div class="cta-line"></div>
+                        </a>
+                    </div>
+                    <div class="hero-categories">
+                        <span class="category-tag">Residential</span>
+                        <span class="category-tag">Commercial</span>
+                        <span class="category-tag">Investment</span>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </section>
+
+    <!-- Cities Grid Section -->
+    <section class="cities-grid-section">
+        <!-- Decorative SVG - Cities Section -->
+        <div class="decorative-svg-cities">
+            <svg width="350" height="350" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="transparent" />
+                <circle class="svg-circle-pulse" cx="175" cy="175" r="80" fill="#ffc425" opacity="0.3" />
+                <circle class="svg-circle-pulse-2" cx="175" cy="175" r="50" fill="#e87722" opacity="0.4" />
+                <polygon class="svg-triangle-spin" points="175,50 250,200 100,200" fill="#003d6a" opacity="0.2" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">More than 25,000 houses & apartments, <span class="highlight-text">all over
+                        the world</span></h2>
+            </div>
+
+            <div class="cities-grid">
+                <!-- Row 1 -->
+                <div class="city-card" data-city="nice">
+                    <div class="city-image">
+                        <img src="image.png" alt="Nice, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Nice</div>
+                </div>
+
+                <div class="city-card" data-city="paris">
+                    <div class="city-image">
+                        <img src="image.png" alt="Paris, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Paris</div>
+                </div>
+
+                <div class="city-card" data-city="bordeaux">
+                    <div class="city-image">
+                        <img src="image.png" alt="Bordeaux, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Bordeaux</div>
+                </div>
+
+                <div class="city-card" data-city="aix-en-provence">
+                    <div class="city-image">
+                        <img src="image.png" alt="Aix-en-Provence, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Aix En Provence</div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="city-card" data-city="montpellier">
+                    <div class="city-image">
+                        <img src="image.png" alt="Montpellier, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Montpellier</div>
+                </div>
+
+                <div class="city-card" data-city="lyon">
+                    <div class="city-image">
+                        <img src="image.png" alt="Lyon, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Lyon</div>
+                </div>
+
+                <div class="city-card" data-city="biarritz">
+                    <div class="city-image">
+                        <img src="image.png" alt="Biarritz, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Biarritz</div>
+                </div>
+
+                <div class="city-card" data-city="nantes">
+                    <div class="city-image">
+                        <img src="image.png" alt="Nantes, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Nantes</div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="city-card" data-city="marseille">
+                    <div class="city-image">
+                        <img src="image.png" alt="Marseille, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Marseille</div>
+                </div>
+
+                <div class="city-card" data-city="monaco">
+                    <div class="city-image">
+                        <img src="image.png" alt="Monaco">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">Monaco</div>
+                </div>
+
+                <div class="city-card" data-city="st-raphael">
+                    <div class="city-image">
+                        <img src="image.png" alt="St-Raphael, France">
+                        <div class="city-overlay"></div>
+                    </div>
+                    <div class="city-name">St-Raphael</div>
+                </div>
+
+                <!-- See All Button -->
+                <div class="see-all-card">
+                    <div class="see-all-content">
+                        <svg class="location-icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <h3>See all locations</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Controls (Outside hero for proper z-index) -->
+    <button class="video-control" aria-label="Pause video"
+        style="display: flex !important; opacity: 1 !important; visibility: visible !important;">
+        <svg class="play-icon" style="display: none;" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <svg class="pause-icon" style="display: block;" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+    </button>
+
+    <!-- Who We Are Section -->
+    <section id="about" class="who-we-are">
+        <!-- Decorative SVG - Who We Are -->
+        <div class="decorative-svg-container-right">
+            <svg class="decorative-svg-right" width="420" height="420" viewBox="0 0 420 420"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- background -->
+                <rect width="100%" height="100%" fill="#fafafa" opacity="0.05" />
+
+                <!-- top corner (darker yellow) triangle -->
+                <polygon class="svg-triangle-1" points="0,0 160,0 160,160" fill="#003d6a" opacity="0.15" />
+
+                <!-- large pale yellow triangle -->
+                <polygon class="svg-triangle-2" points="160,160 420,160 260,420" fill="#00502f" opacity="0.1" />
+
+                <!-- Additional accent -->
+                <circle class="svg-circle" cx="350" cy="70" r="40" fill="#ffc425" opacity="0.2" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Who We Are</span>
+                <h2 class="section-title-large">Your Trusted Partner in Exceptional Real Estate</h2>
+            </div>
+            <div class="two-column-layout">
+                <div class="column-main">
+                    <div class="rich-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt
+                            mollit anim id est laborum.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. </p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt consectetur,
+                            adipisci
+                            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                            aliquam
+                            quaerat voluptatem.</p>
+                    </div>
+                    <a href="#" class="btn-secondary">About Us</a>
+                </div>
+                <div class="column-sidebar">
+                    <div class="stat-block">
+                        <h3 class="stat-number-large">25</h3>
+                        <p class="stat-label">Years of Excellence</p>
+                    </div>
+                    <div class="stat-block">
+                        <h3 class="stat-number-large">$2.5B+</h3>
+                        <p class="stat-label">Total Property Value</p>
+                    </div>
+                    <div class="stat-block">
+                        <h3 class="stat-number-large">5000+</h3>
+                        <p class="stat-label">Happy Homeowners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="locations" class="map-section">
+        <!-- Decorative SVG - Map Section Left -->
+        <div class="decorative-svg-map-left">
+            <svg width="380" height="380" viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fdda7a;stop-opacity:0.6" />
+                        <stop offset="100%" style="stop-color:#fbe3a4;stop-opacity:0.3" />
+                    </linearGradient>
+                </defs>
+                <polygon class="svg-hex-1" points="190,20 310,100 310,260 190,340 70,260 70,100" fill="url(#grad1)" />
+                <polygon class="svg-hex-2" points="190,60 270,110 270,240 190,290 110,240 110,110" fill="#00502f"
+                    opacity="0.15" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow">Where We Work</span>
+                <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="map-tabs">
+                <button class="map-tab active">United States</button>
+                <button class="map-tab">Canada</button>
+                <button class="map-tab">Caribbean</button>
+                <button class="map-tab">Australia</button>
+            </div>
+            <div class="map-placeholder">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2899038948424!2d77.3894687!3d28.6283073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5456ef36d9f%3A0x3b7191b1286136c8!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                    width="100%" height="500" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-stats">
+                <div class="map-stat">
+                    <h3 class="stat-number">100%</h3>
+                    <p>Employee Owned</p>
+                </div>
+                <div class="map-stat">
+                    <h3 class="stat-number">1000+</h3>
+                    <p>Active Projects</p>
+                </div>
+            </div>
+            <a href="#" class="btn-secondary center-btn">View Our Offices</a>
+        </div>
+    </section>
+
+    <!-- What We Do Tabs Section -->
+    <section id="sectors" class="what-we-do-tabs">
+        <div class="container-full">
+            <div class="section-header-center">
+                <span class="eyebrow">What We Do</span>
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+            </div>
+            <div class="category-tabs">
+                <button class="category-tab active" data-tab="buildings">Buildings</button>
+                <button class="category-tab" data-tab="civil">Civil Infrastructure</button>
+                <button class="category-tab" data-tab="industrial">Heavy Industrial</button>
+                <button class="category-tab" data-tab="special">Special Projects</button>
+            </div>
+            <div class="tab-content active" id="buildings-tab">
+                <div class="tab-content-inner">
+                    <div class="tab-image">
+                        <img src="images/building.jpg" alt="Buildings">
+                    </div>
+                    <div class="tab-text">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.</p>
+                        <a href="#" class="link-arrow">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase Section -->
+    <section id="projects" class="project-showcase">
+        <!-- Decorative SVG - Projects -->
+        <div class="decorative-svg-projects">
+            <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="transparent" />
+                <rect class="svg-rect-rotate" x="100" y="100" width="200" height="200" fill="#e87722" opacity="0.2"
+                    rx="20" />
+                <rect class="svg-rect-rotate-2" x="130" y="130" width="140" height="140" fill="#ffc425" opacity="0.25"
+                    rx="15" />
+                <circle class="svg-dot" cx="200" cy="80" r="15" fill="#003d6a" opacity="0.4" />
+                <circle class="svg-dot" cx="320" cy="200" r="20" fill="#fdda7a" opacity="0.5" />
+                <circle class="svg-dot" cx="80" cy="320" r="18" fill="#00502f" opacity="0.3" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow">What We Build</span>
+                <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project 1.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-eyebrow">Project Showcase</span>
+                        <h3 class="project-category">Buildings</h3>
+                        <h4 class="project-title">Lorem Ipsum Dolor Sit Amet Residence</h4>
+                        <p class="project-description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                        <div class="project-meta">
+                            <span><strong>Location:</strong> Lorem, Ipsum</span>
+                            <span><strong>Market:</strong> Education</span>
+                        </div>
+                        <a href="#" class="link-arrow">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card reverse">
+                    <div class="project-image">
+                        <img src="images/project 2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-eyebrow">Project Showcase</span>
+                        <h3 class="project-category">Civil</h3>
+                        <h4 class="project-title">Consectetur Adipiscing Canal Rehabilitation</h4>
+                        <p class="project-description">Sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commodo consequat duis aute irure dolor.</p>
+                        <div class="project-meta">
+                            <span><strong>Location:</strong> Dolor, Sit</span>
+                            <span><strong>Market:</strong> Water Control</span>
+                        </div>
+                        <a href="#" class="link-arrow">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers-section">
+        <!-- Decorative SVG - Careers -->
+        <div class="decorative-svg-careers">
+            <svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+                <polygon class="svg-triangle-bounce" points="210,80 350,280 70,280" fill="#fbe3a4" opacity="0.5" />
+                <polygon class="svg-triangle-bounce-2" points="210,340 280,200 350,340" fill="#e87722" opacity="0.3" />
+                <polygon class="svg-triangle-bounce-3" points="140,200 70,340 210,340" fill="#fdda7a" opacity="0.4" />
+                <circle class="svg-bubble" cx="100" cy="100" r="25" fill="#ffc425" opacity="0.35" />
+                <circle class="svg-bubble" cx="320" cy="120" r="30" fill="#003d6a" opacity="0.25" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow">Careers</span>
+                <h2>Lorem Ipsum Dolor Sit Amet Consectetur</h2>
+            </div>
+            <div class="video-container">
+                <video class="careers-video" autoplay muted loop poster="images/building.jpg">
+                    <source
+                        src="From KlickPin CF Housing society animation [Video] _ Modern bungalow house design Architecture design Architecture.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3 class="careers-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                tempor.
+            </h3>
+            <div class="careers-buttons">
+                <a href="#" class="btn-primary-large">Professionals</a>
+                <a href="#" class="btn-primary-large">Skilled Trades + Craft</a>
+                <a href="#" class="btn-primary-large">Interns</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Owners Section -->
+    <section class="our-owners">
+        <div class="container">
+            <div class="two-column-layout align-center">
+                <div class="column-main">
+                    <span class="eyebrow">Our Owners</span>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat duis aute irure dolor in reprehenderit.</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="column-sidebar">
+                    <div class="employee-spotlight">
+                        <div class="employee-image">
+                            <img src="images/employee.jpg" alt="Employee">
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p class="employee-title">President and General Manager</p>
+                        <p class="employee-bio">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="image-text-section">
+        <div class="image-text-container">
+            <div class="image-text-image">
+                <img src="images/safety.jpg" alt="Safety">
+            </div>
+            <div class="image-text-content">
+                <h3>Safety: Lorem Ipsum Dolor</h3>
+                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Insights Section -->
+    <section id="insights" class="insights-section">
+        <!-- Decorative SVG - Insights Right -->
+        <div class="decorative-svg-insights">
+            <svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#003d6a;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#00502f;stop-opacity:0.2" />
+                    </linearGradient>
+                </defs>
+                <polygon class="svg-star"
+                    points="180,30 210,120 300,120 225,180 255,270 180,210 105,270 135,180 60,120 150,120"
+                    fill="url(#grad2)" />
+                <circle class="svg-ring-1" cx="180" cy="180" r="100" fill="none" stroke="#ffc425" stroke-width="3"
+                    opacity="0.4" />
+                <circle class="svg-ring-2" cx="180" cy="180" r="130" fill="none" stroke="#fdda7a" stroke-width="2"
+                    opacity="0.3" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <h2 class="section-title">Featured Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-image">
+                        <img src="images/Insight 1.jpg" alt="Insight 1">
+                    </div>
+                    <span class="insight-tag">Market Insight</span>
+                    <h4 class="insight-title">Lorem Ipsum Dolor Sit Amet: Consectetur Adipiscing Elit</h4>
+                    <p class="insight-meta">Feature Story • 4 minutes</p>
+                    <a href="#" class="link-arrow">Read Story →</a>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-image">
+                        <img src="images/Insight 2.jpg" alt="Insight 2">
+                    </div>
+                    <span class="insight-tag">Thought Leadership</span>
+                    <h4 class="insight-title">Sed Do Eiusmod Tempor: Incididunt Ut Labore Et Dolore</h4>
+                    <p class="insight-meta">Feature Story • 5 Minutes</p>
+                    <a href="#" class="link-arrow">Read Story →</a>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-image">
+                        <img src="images/Insight 3.jpg" alt="Insight 3">
+                    </div>
+                    <span class="insight-tag">Culture</span>
+                    <h4 class="insight-title">Magna Aliqua Ut Enim: Ad Minim Veniam Quis</h4>
+                    <p class="insight-meta">Feature Story • 3 Minutes</p>
+                    <a href="#" class="link-arrow">Read Story →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section id="newsroom" class="news-section">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/newa1.jpg" alt="News 1">
+                    </div>
+                    <span class="news-tag">Company News</span>
+                    <h4 class="news-title">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h4>
+                    <p class="news-meta">News Release • 2 Minutes</p>
+                    <a href="#" class="link-arrow">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/news2.jpg" alt="News 2">
+                    </div>
+                    <span class="news-tag">Award & Recognition</span>
+                    <h4 class="news-title">Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore</h4>
+                    <p class="news-meta">News Release • 2 Minutes</p>
+                    <a href="#" class="link-arrow">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/news3.jpg" alt="News 3">
+                    </div>
+                    <span class="news-tag">Company News</span>
+                    <h4 class="news-title">Magna Aliqua Ut Enim Ad Minim Veniam</h4>
+                    <p class="news-meta">News Release • 1 Minute</p>
+                    <a href="#" class="link-arrow">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer Contact Section -->
+    <section id="contact" class="pre-footer-contact">
+        <!-- Decorative SVG - Contact Left -->
+        <div class="decorative-svg-contact-left">
+            <svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+                <circle class="svg-wave-circle" cx="160" cy="160" r="120" fill="#ffc425" opacity="0.2" />
+                <circle class="svg-wave-circle-2" cx="160" cy="160" r="80" fill="#fdda7a" opacity="0.3" />
+                <circle class="svg-wave-circle-3" cx="160" cy="160" r="40" fill="#e87722" opacity="0.4" />
+            </svg>
+        </div>
+
+        <!-- Decorative SVG - Contact Right -->
+        <div class="decorative-svg-contact-right">
+            <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect class="svg-diamond" x="100" y="100" width="100" height="100" fill="#00502f" opacity="0.2"
+                    transform="rotate(45 150 150)" />
+                <rect class="svg-diamond-2" x="120" y="120" width="60" height="60" fill="#003d6a" opacity="0.3"
+                    transform="rotate(45 150 150)" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="contact-content">
+                <h2>Ready to Lorem Together?</h2>
+                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!
+                </p>
+                <div class="contact-buttons">
+                    <a href="#" class="btn-primary">Build a Project with Us</a>
+                    <a href="#" class="btn-outline-white">Build a Career with Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Footer -->
+    <section class="subscription-section">
+        <div class="container">
+            <div class="subscription-content">
+                <h3>Lorem ipsum dolor sit amet consectetur!</h3>
+                <p>Subscribe now to get the latest information about lorem ipsum dolor sit amet from NEO ESTATE.</p>
+                <form class="subscription-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <h3>NEO ESTATE</h3>
+                        <p class="footer-tagline">Lorem Ipsum<br>Dolor Sit Amet</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sectors</h4>
+                    <ul>
+                        <li><a href="#">Buildings</a></li>
+                        <li><a href="#">Civil</a></li>
+                        <li><a href="#">Industrial</a></li>
+                        <li><a href="#">Lorem Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Dolor Sit</a></li>
+                        <li><a href="#">Consectetur</a></li>
+                        <li><a href="#">Adipiscing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Region</h4>
+                    <ul>
+                        <li><a href="#">United States (English)</a></li>
+                        <li><a href="#">Canada (English)</a></li>
+                        <li><a href="#">Canada (Français)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NEO ESTATE Constructors Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Ethics/Code of Conduct</a>
+                    <a href="#">Tools & Resources</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- End Page Wrapper -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
